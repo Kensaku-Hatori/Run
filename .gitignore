@@ -72,3 +72,5 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 /Run & Jump/Library
 /Run & Jump/Logs
+/Run & Jump/UserSettings
+/Run & Jump/UserSettings
