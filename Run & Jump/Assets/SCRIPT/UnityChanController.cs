@@ -15,14 +15,15 @@ public class UnityChanController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow) && transform.position.x >= 0)
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && UnityChan.transform.position.x >= 0)
         {
-            transform.Translate(-3, 0, 0);
+            UnityChan.transform.Translate(-3,0,0);
+            //transform.Translate(-3, 0, 0);
         }
-        else if (Input.GetKeyDown(KeyCode.RightArrow) && transform.position.x <= 3)
+        else if (Input.GetKeyDown(KeyCode.RightArrow) && UnityChan.transform.position.x <= 0)
         {
-            transform.Translate(3, 0, 0);
+            UnityChan.transform.Translate(3, 0, 0);
         }
-        transform.Translate(0, 0, WallkSpeed / 10);
+        UnityChan.transform.Translate(0, 0, WallkSpeed / 10);
     }
 }
