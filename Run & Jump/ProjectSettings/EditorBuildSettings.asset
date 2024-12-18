@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameScene 6.unity
     guid: 2f3dce6e19e358e49bd2487dcfded00c
+  - enabled: 1
+    path: Assets/Scenes/zizii.unity
+    guid: 5082bd566b47f36478668bffbf41b764
   m_configObjects: {}

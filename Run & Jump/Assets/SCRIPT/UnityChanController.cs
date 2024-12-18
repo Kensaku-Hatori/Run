@@ -35,18 +35,19 @@ public class UnityChanController : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-           //その収集アイテムを非表示にする
-           other.gameObject.SetActive(false);
-           score = score + 1;//スコア加算
-           SetText();
+        if (other.gameObject.CompareTag("Item"))
+        {
+            //その収集アイテムを非表示にする
+            other.gameObject.SetActive(false);
+            score = score + 1;//スコア加算
+            SetText();
+        }
 
     }
     void SetText()
     {
-        score *= 100;
-
         //スコアの表示を更新
-        ScoreText.GetComponent<TextMeshProUGUI>().text = "Count:" + score.ToString();
+        ScoreText.GetComponent<TextMeshProUGUI>().text = "Score:" + score.ToString();
     }
 
 
